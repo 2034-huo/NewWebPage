@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+}
+
+header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+}
+
+header .inner h1{
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+
+header .inner h1 a{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #080808;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+header .inner #gnb{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+header .inner #gnb li {
+    float: left;
+}
+
+header .inner #gnb li a{
+    display: block;
+    color: #555;
+}
+
+header .inner #gnb a {
+    display: block;
+    color: #555;
+    font-size: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 20px 40px;
+    letter-spacing: 1px;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 120px);
+}
+
+figure video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+figure .inner {
+    width: 1180px;
+    margin: 0px auto;
+    position: relative;
+    top: 30%;
+    margin-left: 260px;
+}
+
+figure .inner h1{
+    
+    font-size: 140px;
+    letter-spacing: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    opacity: 0.8;
+    font-weight: bolder;
+
+}
+
+figure .inner p {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 44px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+figure .inner h1:hover{
+    color: rgb(15, 80, 122);
+}
+
+figure .inner p:hover{
+    color: rgb(15, 80, 122);
+}
+
+footer{
+    width: 100%;
+    background: #9bbbda;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bbbda, #132242);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bbbda, #132242); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 20px 20px;
+    clear: both;
+}
+
+footer .inner{
+    width: 1180px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+footer .inner .upper {
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+footer .inner .lower{
+    width: 100%;
+    padding-top: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+footer .inner .lower address{
+    margin-bottom: 15px;
+}
+
+.My{
+    margin-left: 20%;
+    margin-top: 60px;
+    display: block;
+}
+
+.subject{
+    width: 100%;
+    /* text-align: center; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+
+.My .content_left{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.My .content_right{
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 50%;
+    float: left;
+}
+
+.My .content_right ul li{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.My .content_left img{
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.skill{
+    width: 1180px;
+    display: block;
+    text-align: center;
+    width: 1180px;
+    margin: 0px auto;
+    
+}
+
+.skill .inner{
+    text-align: center;
+}
+
+.skill .inner h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #132242;
+}
+
+.skill .inner img{
+    width: 500px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.skill .inner video{
+    width: 560px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.skill .subject{
+    width: 100%;
+    /* text-align: center; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+

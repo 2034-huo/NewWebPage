@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="" width=device-width, initial-scale="1.0">
+    <title>Javascript 실습</title>
+</head>
+<body>
+    <h1 id ="title">Hello World</h1>
+    
+    <section id="wrap">
+        <article class = "box1">TEXT1 </article>
+        <article class = "box2">TEXT2 </article>
+        <article class = "box3">TEXT3 </article>
+    </section>
+    <a href="http://www.naver.com" target="_blank">CLICK</a>
+    <div id = "box"></div>
+    <a href="#" class="btnLeft">왼쪽으로 회전</a>
+    <a href="#" class="btnRight">오른쪽으로 회전</a>
+<script>
+    const title = document.querySelector("#title");
+    console.log(title);
+
+    const link = document.querySelector("a");
+    link.addEventListener("click", ()=> {console.log("링크를 클릭했습니다."); });
+
+    const btnLeft = document.querySelector(".btnLeft");
+    const btnRight = document.querySelector(".btnRight");
+
+
+    let num = 0;
+    btnLeft.addEventListener("click", ()=>{
+        num --;
+        box.style.transform=`rotate(${num*30}deg)`;
+    });
+
+    btnRight.addEventListener("click", ()=>{
+        num ++;
+        box.style.transform=`rotate(${num*30}deg)`;
+    });
+
+    const box = document.querySelector("#box");
+    box.style.width="200px";
+    box.style.height="200px";
+    box.style.background="aqua";
+    box.style.margin ="100px auto";
+
+    box.addEventListener("mouseenter", ()=> {
+        box.style.background="skyblue";
+    });
+
+    box.addEventListener("mouseleave", ()=> {
+        box.style.background="aqua";
+    });
+    // var document: Document
+    // const box1 = document.querySelector("#wrap .box1");
+    // box1.style.width="10%";
+    // box1.style.backgroundColor = "skyblue";
+    // box1.style.border="dotted";
+
+    // const items = document.querySelectorAll("#wrap article");
+    // for(let item of items){
+    //     console.log(item);
+    // }
+
+</script> 
+
+</body>
+</html>
