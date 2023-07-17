@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fine.css">
+</head>
+<body>
+    <canvas id = "JSCanves" class="canvas"></canvas>
+
+
+    <div class="content"></div>
+        
+        <div class="controls">
+            <div class="controls_range">
+            <input type="range" id="jsRange"
+            min="0.1" max="40.0" value="2.5" step="0.1"/>
+        </div>
+            <div class="controls_colors" id="JSCanves">
+                <div class="controls_colors jsColor"
+                style="background-color: black;"></div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(255, 255, 255);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(255, 0, 0);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(255, 174, 0);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(255, 217, 0);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(43, 175, 31);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(16, 119, 255);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(42, 36, 117);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(150, 14, 177);"> </div>
+                <div class="controls_colors jsColor"
+                style="background-color: rgb(255, 103, 129);"> </div>
+
+                <section id="s_color_picker_id">
+                    <canvas id="color_picker" width="50" height="50"></canvas>
+                    <div id="color_id"></div>
+                  </section>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>     
+        <script src="app.js"></script>
+</body>
+</html>
